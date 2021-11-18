@@ -1,0 +1,13 @@
+name: 'View GitHub JWT'
+description: 'Exposes the JWT Token from GitHub Actions - For Security Testing Only'
+inputs:
+  aud:  # id of input
+    description: 'The audiance field in the JWT'
+    required: false
+    default: 'FOO.BAR'
+outputs:
+  jwt: # id of output
+    description: 'The signed JWT ID Token'
+runs:
+  using: 'node12'
+  main: 'index.js'
