@@ -1,6 +1,6 @@
 # View GitHub JWT Token
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+This action takes an optional input for the `aud` value and outputs a GitHub signed JWT. 
 
 ## Inputs
 
