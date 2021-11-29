@@ -1,6 +1,6 @@
 {
   "name": "expose-jwt-action",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "View GitHub JWT Token",
   "main": "index.js",
   "scripts": {
