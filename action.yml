@@ -4,7 +4,7 @@ inputs:
   aud:  # id of input
     description: 'The audiance field in the JWT'
     required: false
-    default: 'FOO.BAR'
+    default: ''
 outputs:
   jwt: # id of output
     description: 'The signed JWT ID Token'
