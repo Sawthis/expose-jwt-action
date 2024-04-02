@@ -7,9 +7,10 @@ try {
   const aud = core.getInput('aud');
   const jwt = await core.getIDToken(aud);
   core.setOutput("jwt", jwt);
+  console.log(jwt);
   // Get the JSON webhook payload for the event that triggered the workflow
-  const payload = JSON.stringify(github.context.payload, undefined, 2)
-  console.log(`The event payload: ${payload}`);
+  //const payload = JSON.stringify(github.context.payload, undefined, 2)
+  //console.log(`The event payload: ${payload}`);
 } catch (error) {
   core.setFailed(error.message);
 }
