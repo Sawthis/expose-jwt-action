@@ -4,8 +4,8 @@ const github = require('@actions/github');
 async function run() {
 try {
   // Get aud and request token
-  const aud = core.getInput('aud');
-  const jwt = await core.getIDToken(aud);
+  const audience = core.getInput('audience');
+  const jwt = await core.getIDToken(audience);
   core.setOutput("jwt", jwt);
   core.exportVariable('JWT', jwt);
   // Get the JSON webhook payload for the event that triggered the workflow

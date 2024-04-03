@@ -4,9 +4,9 @@ This action takes an optional input for the `aud` value and outputs a GitHub sig
 
 ## Inputs
 
-## `aud`
+## `audience`
 
-The audiance field in the JWT
+The audience field in the JWT
 
 Default: ``
 
@@ -18,6 +18,6 @@ The JSON Web Token signed by GitHub Actions
 
 ## Example usage
 
-uses:Sawthis/expose-jwt-action@v0.1.3
+uses:Sawthis/expose-jwt-action@v0.1.5
 with:
-  aud: 'sts.amazonaws.com'
+  audience: 'sts.amazonaws.com'

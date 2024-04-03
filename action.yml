@@ -1,8 +1,8 @@
 name: 'View GitHub JWT'
 description: 'Exposes the JWT Token from GitHub Actions - For Security Testing Only'
 inputs:
-  aud:  # id of input
-    description: 'The audiance field in the JWT'
+  audience:  # id of input
+    description: 'The audience field in the JWT'
     required: false
     default: ''
 outputs:
