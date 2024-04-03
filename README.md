@@ -8,7 +8,7 @@ This action takes an optional input for the `aud` value and outputs a GitHub sig
 
 The audiance field in the JWT
 
-Default: `FOO.BAR`
+Default: ``
 
 ## Outputs
 
@@ -18,6 +18,6 @@ The JSON Web Token signed by GitHub Actions
 
 ## Example usage
 
-uses: magic7s/expose-jwt-action@main
+uses:Sawthis/expose-jwt-action@v0.1.3
 with:
   aud: 'sts.amazonaws.com'
